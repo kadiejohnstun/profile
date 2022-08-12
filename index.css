@@ -39,7 +39,9 @@ div.container{
 
 }
 article{
-    background-color: grey;
+    background-image: url(kualoa.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     border: 0px 5px 5px solid black;
     padding: 1rem;
@@ -75,6 +77,12 @@ footer{
     font-weight: bold;
     max-height: 100%;
     
+}
+article div{
+    background-color: black;
+    border-radius: 10px;
+    min-height: 95%;
+    opacity: .5;
 }
 @media screen {
     

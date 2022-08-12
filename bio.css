@@ -3,7 +3,10 @@ html, body{
     background-color: rgb(214, 216, 236);
     max-width: 100%;
 }
-
+body{
+    border: 5px solid black;
+    border-radius: 10px ;
+}
 header{
     font-size: 75px;
     padding-left: 20px;
@@ -19,8 +22,9 @@ ul.pages{
 div.container{
     display: flex;
     justify-content: space-between;
-    border: 5px solid black;
+    border-bottom: 5px solid black;
     border-radius: 10px 10px 0px 0px;
+    background-color: fuchsia;
 }
 .pages #buttons{
     color: black;
