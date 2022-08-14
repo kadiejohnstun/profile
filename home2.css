@@ -1,0 +1,38 @@
+body{
+    color: white;
+
+}
+div.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: freehand;
+    font-size: 10vh;
+    background-color: fuchsia;
+    border: 5px solid black;
+    padding-left: 25px;
+    border-radius: 10px 10px 0px 0px;
+}
+#profile{
+    border-left: 5px solid black;
+}
+div.container2{
+    display: flex;
+    min-width: 100%
+}
+nav{
+    background-color: black;
+}
+article{
+    background-image: url(kualoa.jpg);
+    background-size: cover;
+    background-position: center;
+}article div{
+    background-color: black;
+    border-radius: 10px;
+    min-height: 95%;
+    opacity: .5;
+    padding-left: 10px;
+    padding-top: 1rem;
+    padding-right: 10px;
+}

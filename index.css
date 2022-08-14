@@ -1,23 +1,23 @@
 html, body{
-    font-family: cinzel decorative;
     height: 100%; 
-       
+    color: white;  
 }
 body{
+    font-family: cinzel decorative;
     border: 5px solid black;
     border-radius: 10px;
     
 }
-header{
+div.container1{
     background-color: fuchsia;
     border-bottom: 5px solid black;
+    border-radius: 5px 10px 0px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    max-height: 15%;
     font-size: 75px;
-    color: white;
     padding-left: 1em;
     font-weight: bolder;
     text-shadow: 3px 3px black;
@@ -26,9 +26,9 @@ header{
 }
 header img{
     border-radius: 10px 10px 0px 10px;
-    max-height: 100%;
+    max-height: 15%;
     border: 4px solid black;
-    
+
 
 }
 div.container{
@@ -39,21 +39,18 @@ div.container{
 
 }
 article{
+    border: 0px 5px 5px solid black;
     background-image: url(kualoa.jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    border: 0px 5px 5px solid black;
     padding: 1rem;
     font-size: 30px;
-    color: white;
     text-shadow: 3px 3px black;
     font-weight: bold;
     
 }
 nav{
     background-color: black;
-    color: white;
     min-width: 15%;
     font-size: 30px;
 }
@@ -76,6 +73,7 @@ footer{
     text-shadow: 2px 2px black;
     font-weight: bold;
     max-height: 100%;
+    position: bottom;
     
 }
 article div{
@@ -83,7 +81,139 @@ article div{
     border-radius: 10px;
     min-height: 95%;
     opacity: .5;
+    padding-left: 10px;
+    padding-top: 1rem;
+    padding-right: 10px;
 }
-@media screen {
-    
+article div p{
+    text-shadow: 2px 2px black;
 }
+@media screen and (max-width: 1389px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+    header{
+        block-size: fit-content;
+        font-size: 5vw;
+    }
+    header img{
+        max-height: 100%;
+        max-width: 25%;
+    }
+    div.container{
+        display: flex;
+        flex-direction: column;
+        block-size: fit-content;
+        font-size: 5vw;
+    }
+    article{
+        block-size: fit-content;
+        font-size: 5vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    footer{
+        max-width: 97%;
+        max-height: fit-content;
+        block-size: fit-content;
+        font-size: 5vw;
+    }
+} 
+/* body{
+    font-family: cinzel decorative;
+    border: 5px solid black;
+    border-radius: 10px; 
+    color: white;  
+    min-height: 100%;
+}
+div.container1{
+    display: flex;
+    background-color: fuchsia;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid black;
+    font-weight: bolder;
+    max-width: 100%;
+
+}
+header{
+    padding-left: 1em;
+    font-size: 75px;
+    text-shadow: 5px 5px black;
+}
+img #header{
+    size: 75%;
+}
+div.container{
+    display: flex;
+    min-height: 100%;
+}
+nav a{
+    color: white;
+    font-size: 2em;
+}
+div nav{
+    background-color: black;
+}
+article div{
+    background-color: black;
+    border-radius: 10px;
+    min-height: 95%;
+    opacity: .5;
+    padding-left: 1em;
+    padding-top: 1rem;
+    padding-right: 1em;
+}
+article{
+    border: 0px 5px 5px solid black;
+    background-image: url(kualoa.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    font-size: 2em;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 2px 2px black;
+    font-weight: bolder;
+    background-color: fuchsia;
+    border-top: 5px solid black;
+}
+@media screen and (max-width: 1389px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+    header{
+        block-size: fit-content;
+        font-size: 5vw;
+    }
+    header img{
+        max-height: 100%;
+        max-width: 25%;
+    }
+    div.container{
+        display: flex;
+        flex-direction: column;
+        block-size: fit-content;
+        font-size: 5vw;
+    }
+    article{
+        block-size: fit-content;
+        font-size: 5vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    footer{
+        max-width: 97%;
+        max-height: fit-content;
+        block-size: fit-content;
+        font-size: 5vw;
+    } */

@@ -23,17 +23,16 @@ div.container{
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid black;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
     background-color: fuchsia;
 }
 .pages #buttons{
     color: black;
+    font-weight: bold;
 }
 video{
     max-width:25rem;
     width:100%;
-    max-height:25rem;
-    height:100%;
     margin:1.25rem auto;
     padding:1.051%;
     background-image: url(https://cdn.pixabay.com/photo/2014/04/02/16/27/volleyball-307323__340.png);
@@ -47,6 +46,10 @@ media{
     justify-content: space-between;
     flex-direction: row;
     height: 25rem;
+    border: 5px solid black;
+    background-image: url(kualoa.jpg);
+    background-size: cover;
+    background-position: center;
 }
 img#bbq{
     height: 100%;
@@ -65,4 +68,15 @@ h1#hobbies{
 section p{
     font-size: 20px;
 }
+div nav{
+    border-left: 5px solid black;
+    padding-right: 5px;
+}
+section{
+    padding: 10px;
+}
+media video{
+    height: 24em;
+}
+
 

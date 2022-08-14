@@ -1,3 +1,7 @@
+body{
+    font-family: cinzel decorative;
+    font-weight: bold;    
+}
 div.container{
     display: flex;
     flex-direction: row;
@@ -9,18 +13,34 @@ div.container{
     border: 5px solid black;
     color: white;
     max-width: 99%;
+    border-radius: 5px 5px 0px 0px;
 }
 header{
     display: flex;
     align-items: center;
     font-size: 75px;
     padding-left: .25em;
-
-}
-a.pages{
     color: white;
+    text-shadow: 5px 5px black;
+}
+.pages #buttons{
+    color: black;
+    font-weight: bold;
    
 }.container nav{
     border-left: 5px solid black;
     padding-right: 1em;
+}
+#company{
+    padding-left: 1em;
+}
+#companyDescription{
+    padding-left: 2em;
+}
+#companyBullets{
+    padding-left: 4em;
+}
+div#company{
+    display: flex;
+    justify-content: space-between;
 }
