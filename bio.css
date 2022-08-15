@@ -8,31 +8,40 @@ body{
     border-radius: 10px ;
 }
 header{
-    font-size: 75px;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-}
-ul.pages{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    max-width: 100%;
-    }
-div.container{
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid black;
     border-radius: 5px 5px 0px 0px;
     background-color: fuchsia;
 }
+header h1{
+    font-size: 75px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+header nav{
+
+    min-width: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ul.pages{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    max-width: 100%;
+    } */
+
 .pages #buttons{
     color: black;
     font-weight: bold;
 }
 video{
     max-width:25rem;
-    width:100%;
+    /* width:100%; */
     margin:1.25rem auto;
     padding:1.051%;
     background-image: url(https://cdn.pixabay.com/photo/2014/04/02/16/27/volleyball-307323__340.png);
@@ -78,5 +87,42 @@ section{
 media video{
     height: 24em;
 }
+@media screen and (max-width: 1389px){
+    header{
+        block-size: fit-content;
+        font-size: 1em;
+        max-height: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content:;
+    }
+    header h1{
+        order: 2;
+        font-size: 5vh;
+    }
+    header nav{
+        block-size: fit-content;
+        width: fit-content;
+        min-height: 100%;
+        border-left: 5px;
+        padding-right: 1em;
+    }
+    section{
+        block-size: fit-content;
+    }
+    media{
+        display: flex;
+        flex-direction: column;
+        block-size: fit-content;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img#bbq{
+        width: 100%;
+    }
+    img#spearFishing{
+        width: 100%;
+    }
 
+}
 

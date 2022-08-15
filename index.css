@@ -1,14 +1,16 @@
 html, body{
-    height: 100%; 
+    min-height: 100%;
     color: white;  
+
 }
 body{
     font-family: cinzel decorative;
     border: 5px solid black;
     border-radius: 10px;
+    min-height: 100%;
     
 }
-div.container1{
+header{
     background-color: fuchsia;
     border-bottom: 5px solid black;
     border-radius: 5px 10px 0px 0px;
@@ -16,17 +18,16 @@ div.container1{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-height: 15%;
-    font-size: 75px;
+    max-height: 15vh;
+    font-size: 2em;
     padding-left: 1em;
     font-weight: bolder;
     text-shadow: 3px 3px black;
-    
-   
 }
+
 header img{
-    border-radius: 10px 10px 0px 10px;
-    max-height: 15%;
+    border-radius: 10px 0px 0px 10px;
+    max-height: 15vh;
     border: 4px solid black;
 
 
@@ -64,18 +65,6 @@ ul p{
 nav a{
     color: white
 }
-footer{
-    color: white;
-    background-color: fuchsia;
-    border-top: 5px solid black;
-    display: flex;
-    justify-content: space-around;
-    text-shadow: 2px 2px black;
-    font-weight: bold;
-    max-height: 100%;
-    position: bottom;
-    
-}
 article div{
     background-color: black;
     border-radius: 10px;
@@ -88,6 +77,19 @@ article div{
 article div p{
     text-shadow: 2px 2px black;
 }
+footer{
+    color: white;
+    background-color: fuchsia;
+    border-top: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    max-height: 100%;
+    position: bottom;
+    
+}
+
 @media screen and (max-width: 1389px){
     body{
         display: flex;
@@ -96,7 +98,7 @@ article div p{
     }
     header{
         block-size: fit-content;
-        font-size: 5vw;
+        font-size: 5vh;
     }
     header img{
         max-height: 100%;
@@ -109,20 +111,22 @@ article div p{
         font-size: 5vw;
     }
     article{
-        block-size: fit-content;
+        /* block-size: fit-content; */
         font-size: 5vw;
-        position: fixed;
         bottom: 0;
         left: 0;
     }
     footer{
-        max-width: 97%;
+        max-width: 100%;
         max-height: fit-content;
         block-size: fit-content;
         font-size: 5vw;
     }
 } 
-/* body{
+/* html body{
+   height: 100%;
+}
+body{
     font-family: cinzel decorative;
     border: 5px solid black;
     border-radius: 10px; 
@@ -136,7 +140,8 @@ div.container1{
     align-items: center;
     border-bottom: 5px solid black;
     font-weight: bolder;
-    max-width: 100%;
+    min-width: 100%;
+    max-height: 15vh;
 
 }
 header{
@@ -145,11 +150,11 @@ header{
     text-shadow: 5px 5px black;
 }
 img #header{
-    size: 75%;
+    block-size: fit-content;
+    max-width: fit-content;
 }
 div.container{
     display: flex;
-    min-height: 100%;
 }
 nav a{
     color: white;
@@ -183,18 +188,19 @@ footer{
     font-weight: bolder;
     background-color: fuchsia;
     border-top: 5px solid black;
+    position: relative;
 }
 @media screen and (max-width: 1389px){
     body{
         display: flex;
         flex-direction: column;
-        min-height: 100%;
+        min-height: 100vh;
     }
     header{
         block-size: fit-content;
         font-size: 5vw;
     }
-    header img{
+    div img{
         max-height: 100%;
         max-width: 25%;
     }
@@ -210,10 +216,13 @@ footer{
         position: fixed;
         bottom: 0;
         left: 0;
+        background-image: url(kualoa.jpg);
+        background-size: cover;
     }
     footer{
         max-width: 97%;
         max-height: fit-content;
         block-size: fit-content;
         font-size: 5vw;
-    } */
+    }
+} */
