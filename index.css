@@ -93,6 +93,11 @@ footer{
 }
 
 @media screen and (max-width: 1389px){
+    html, body{
+        height: fit-content;
+        /* border: 5px solid black; */
+    }
+        
     body{
         display: flex;
         flex-direction: column;
@@ -108,20 +113,20 @@ footer{
         display: flex;
         flex-direction: column;
         block-size: fit-content;
-        font-size: 5vw;
     }
     article{
         block-size: fit-content;
     }
     article div{
         block-size: fit-content;
-        /* max-height: 100%; */
+        font-size: .75em;
     }
     footer{
         display: flex;
         flex-direction: column;
         block-size: fit-content;
-        font-size: 5vw;
+        font-size: .75em;
+        max-height: 10%;
     }
 } 
 /* html body{

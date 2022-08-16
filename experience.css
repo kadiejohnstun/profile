@@ -42,5 +42,27 @@ header{
 }
 div#company{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    padding-right: 2em;
+}
+@media screen and (max-width: 1389px){
+    div.container{
+        block-size: fit-content;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header{
+        font-size: 10vw;
+    }
+    nav{
+        border-bottom: 5px solid black;
+        border-left: 5px solid fuchsia;
+    }
+    div#comapny{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
