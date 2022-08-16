@@ -94,7 +94,6 @@ media video{
         max-height: 5%;
         display: flex;
         flex-direction: column;
-        justify-content:;
     }
     header h1{
         order: 2;
