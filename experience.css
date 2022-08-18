@@ -28,7 +28,6 @@ header{
     font-weight: bold;
    
 }.container nav{
-    border-left: 5px solid black;
     padding-right: 1em;
 }
 #company{
@@ -40,29 +39,27 @@ header{
 #companyBullets{
     padding-left: 4em;
 }
-div#company{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 2em;
-}
 @media screen and (max-width: 1389px){
-    div.container{
+    header{
         block-size: fit-content;
         font-size: 1em;
+        max-height: 5%;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-    header{
-        font-size: 10vw;
+    header h1{
+        order: 2;
+        font-size: 5vh;
+    }
+    header nav{
+        block-size: fit-content;
+        width: fit-content;
+        min-height: 100%;
+        border-left: 5px;
+        padding-right: 1em;
     }
     nav{
         border-bottom: 5px solid black;
         border-left: 5px solid fuchsia;
-    }
-    div#comapny{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 }
